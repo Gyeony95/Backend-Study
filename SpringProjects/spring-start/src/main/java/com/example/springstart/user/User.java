@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -13,7 +14,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-@JsonIgnoreProperties(value= {"password"})//json 데이터 보낼때 빼고 보냄
+//@JsonIgnoreProperties(value= {"password"})//json 데이터 보낼때 빼고 보냄
+@JsonFilter("UserInfo")
 public class User {
 	private Integer id;
 	
