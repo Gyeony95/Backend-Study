@@ -1,0 +1,34 @@
+package com.example.springstart.user;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+	private UserDaoAService service;
+	
+	public UserController(UserDaoAService service) {
+		this.service = service;
+	}
+	
+	@GetMapping(path = "/users")
+	public List<User> retrieveAllUsers(){
+		return service.findAll();
+	}
+	
+	
+	@GetMapping(path = "/users/{id}")
+	public User retrieveAllUser(@PathVariable int id){
+		return service.fiundOne(id);
+	}
+	
+	@PostMapping(path= "/users")
+	public User createUser() {
+		return service.save(new User(null, "gh", new Date()));
+	}
+}

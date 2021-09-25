@@ -1,0 +1,5 @@
+package com.example.springstart;
+
+public class HelloWorldController {
+
+}
