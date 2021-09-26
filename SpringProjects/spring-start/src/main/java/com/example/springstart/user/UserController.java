@@ -1,11 +1,13 @@
 package com.example.springstart.user;
 
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import javax.validation.Valid;
 
+import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.HttpStatus;
@@ -49,6 +51,22 @@ public class UserController {
 		
 		return model;
 	}
+	
+    // 전체 사용자 목록
+    @GetMapping("/users2")
+    public ResponseEntity<CollectionModel<EntityModel<User>>> retrieveUserList2() {
+        List<EntityModel<User>> result = new ArrayList<>();
+        List<User> users = service.findAll();
+
+        for (User user : users) {
+            EntityModel entityModel = EntityModel.of(user);
+            entityModel.add(WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).retrieveAllUsers()).withSelfRel());
+
+            result.add(entityModel);
+        }
+
+        return ResponseEntity.ok(CollectionModel.of(result, WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).retrieveAllUsers()).withSelfRel()));
+    }
 	
 	@DeleteMapping(path = "/users/{id}")
 	public User deleteUser(@PathVariable int id){
