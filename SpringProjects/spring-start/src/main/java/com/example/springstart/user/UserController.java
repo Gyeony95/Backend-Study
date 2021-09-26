@@ -6,6 +6,8 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -30,17 +32,22 @@ public class UserController {
 	public List<User> retrieveAllUsers(){
 		return service.findAll();
 	}
-	
+	//kkkkkkkk naneun sookong ida!
 	
 	@GetMapping(path = "/users/{id}")
-	public User retrieveAllUser(@PathVariable int id){
+	public EntityModel<User> retrieveUser(@PathVariable int id){
 		User user = service.fiundOne(id);
 		if(user == null) {
 			throw new UserNotFoundException(String.format("ID[%s] not found", id));
 		}
 		
+		EntityModel<User> model = new EntityModel<>(user);
+		WebMvcLinkBuilder linkTo = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).retrieveAllUsers()); //Hateoas를 사용해 하이퍼 미디어 링크 내려주기
+		model.add(linkTo.withRel("all-users"));
 		
-		return user;
+		
+		
+		return model;
 	}
 	
 	@DeleteMapping(path = "/users/{id}")

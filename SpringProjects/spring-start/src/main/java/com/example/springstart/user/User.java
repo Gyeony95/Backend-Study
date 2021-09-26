@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 //@JsonIgnoreProperties(value= {"password"})//json 데이터 보낼때 빼고 보냄
-@JsonFilter("UserInfo")
+//@JsonFilter("UserInfo")
 public class User {
 	private Integer id;
 	
