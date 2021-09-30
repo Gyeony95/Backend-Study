@@ -12,3 +12,8 @@ management:
    web:
     exposure:
      include: "*"
+     
+security:
+  user:
+    name: username
+    password: passw0rd
