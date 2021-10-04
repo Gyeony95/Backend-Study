@@ -12,9 +12,12 @@ public class UserDaoAService {
 	private static List<User> users = new ArrayList<>();
 	private static int usersCount = 3;
 	static {
-		users.add(new User(1, "first", new Date(), "pass1", "701010-1111111"));
-		users.add(new User(2, "second", new Date(), "pass2", "701010-1111111"));
-		users.add(new User(3, "third", new Date(), "pass3", "701010-1111111"));
+//		users.add(new User(1, "first", new Date(), "pass1", "701010-1111111"));
+//		users.add(new User(2, "second", new Date(), "pass2", "701010-1111111"));
+//		users.add(new User(3, "third", new Date(), "pass3", "701010-1111111"));
+		users.add(new User(1, "first", "pass1", "701010-1111111"));
+		users.add(new User(2, "second", "pass2", "701010-1111111"));
+		users.add(new User(3, "third",  "pass3", "701010-1111111"));
 	}
 	
 	//전체사용자 조회

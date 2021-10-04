@@ -5,8 +5,21 @@ logging:
   level:
      org.springframework: DEBUG
 spring:
-  messages:
-    basename: messages
+ h2:
+  console: 
+    enabled: true
+ jpa:
+  show-sql: true
+  generate-ddl: true 
+  hibernate:
+    ddl-auto: create
+  defer-datasource-initialization: true
+ datasource:
+  url: jdbc:h2:mem:testdb
+ messages:
+  basename: messages
+  
+  
 management:
  endpoints:
    web:
@@ -20,10 +33,5 @@ management:
     
 jpa:
   show-sql: true
-  
-h2:
-  console: 
-    enabled: true
-    
-datasource:
-  url: jdbc:h2:mem:testdb
+
+
