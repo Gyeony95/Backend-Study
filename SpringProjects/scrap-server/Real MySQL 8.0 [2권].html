@@ -1,0 +1,345 @@
+<div class="tab-pane active" id="intro_book">
+ <p><strong>MySQL 서버를 활용하는 프로젝트에 꼭 필요한 경험과 지식을 담았습니다!</strong></p> 
+ <p>《Real MySQL 8.0》은 《Real MySQL》을 정제해서 꼭 필요한 내용으로 압축하고, MySQL 8.0의 GTID와 InnoDB 클러스터 기능들과 소프트웨어 업계 트렌드를 반영한 GIS 및 전문 검색 등의 확장 기능들을 추가로 수록했다.</p> 
+ <p>또한 《Real MySQL 8.0》은 단순 SQL 문법이나 쿼리 작성보다는 MySQL 서버를 활용하는 프로젝트에서 꼭 필요한 경험과 지식을 전달하는 데 집중했다.</p> 
+ <p>이 책을 처음부터 끝까지 정독할 수 있다면 더없이 좋겠지만 필요하거나 관심 있는 내용 위주로 살펴봐도 지금까지 경험했던 수많은 문제들을 해결할 수 있을 것이다.</p> 
+ <p><strong>★ 이 책에서 다루는 내용 ★</strong></p> 
+ <ul> 
+  <li>MySQL 설치와 서버 아키텍처</li> 
+  <li>트랜잭션과 잠금</li> 
+  <li>인덱스 종류의 구조 및 활용</li> 
+  <li>GTID 기반 복제 및 InnoDB 클러스터 아키텍처</li> 
+  <li>쿼리의 실행 계획 분석 및 최적화</li> 
+  <li>스토어드 프로그램 개발</li> 
+  <li>데이터 모델링 및 최적의 데이터 타입 선정</li> 
+  <li>파티션 및 데이터 압축 활용</li> 
+  <li>GIS 및 전문 검색 기능 활용</li> 
+  <li>Performance 스키마 및 Sys 스키마 활용</li> 
+ </ul> 
+ <p>&nbsp;</p> 
+ <h4>도서 상세 이미지</h4> 
+ <p><img src="//wikibook.co.kr/images/images/realmysql8012_Detail.png" class="book-preview-img"></p> 
+</div> 
+<div class="tab-pane" id="review_by_publisher"> 
+</div> 
+<div class="tab-pane" id="intro_author">
+ <h4>백은빈</h4> 
+ <p>컴퓨터 공학을 전공하고 카카오에서 MySQL/MongoDB DBA로 근무하면서 DB 운영 및 트러블슈팅과 데이터 모델링, DBMS 도구 개발 및 신기술 벤치마킹을 수행했으며, 현재 당근마켓에서 MySQL/MongoDB DBA로 근무하고 있다.</p> 
+ <h4>이성욱</h4> 
+ <p>컴퓨터 과학을 전공하고 네이버와 라인을 거쳐 카카오 및 밸런스히어로에서 DBA로 근무했으며, 현재 당근마켓 DB팀 리더로 근무하고 있다.</p> 
+</div> 
+<div class="tab-pane" id="toc">
+ <ul> 
+  <li><strong>▣ 11장: 쿼리 작성 및 최적화</strong> 
+   <ul> 
+    <li>11.1 쿼리 작성과 연관된 시스템 변수 
+     <ul> 
+      <li>11.1.1 SQL 모드</li> 
+      <li>11.1.2 영문 대소문자 구분</li> 
+      <li>11.1.3 MySQL 예약어</li> 
+     </ul></li> 
+    <li>11.2 매뉴얼의 SQL 문법 표기를 읽는 방법</li> 
+    <li>11.3 MySQL 연산자와 내장 함수 
+     <ul> 
+      <li>11.3.1 리터럴 표기법 문자열</li> 
+      <li>11.3.2 MySQL 연산자</li> 
+      <li>11.3.3 MySQL 내장 함수</li> 
+     </ul></li> 
+    <li>11.4 SELECT 
+     <ul> 
+      <li>11.4.1 SELECT 절의 처리 순서</li> 
+      <li>11.4.2 WHERE 절과 GROUP BY 절, ORDER BY 절의 인덱스 사용</li> 
+      <li>11.4.3 WHERE 절의 비교 조건 사용 시 주의사항</li> 
+      <li>11.4.4 DISTINCT</li> 
+      <li>11.4.5 LIMIT n</li> 
+      <li>11.4.6 COUNT()</li> 
+      <li>11.4.7 JOIN</li> 
+      <li>11.4.8 GROUP BY</li> 
+      <li>11.4.9 ORDER BY</li> 
+      <li>11.4.10 서브쿼리</li> 
+      <li>11.4.11 CTE(Common Table Expression)</li> 
+      <li>11.4.12 윈도우 함수(Window Function)</li> 
+     </ul></li> 
+    <li>11.4.13 잠금을 사용하는 SELECT</li> 
+    <li>11.5 INSERT 
+     <ul> 
+      <li>11.5.1 고급 옵션</li> 
+      <li>11.5.2 LOAD DATA 명령 주의 사항</li> 
+      <li>11.5.3 성능을 위한 테이블 구조</li> 
+     </ul></li> 
+    <li>11.6 UPDATE와 DELETE 
+     <ul> 
+      <li>11.6.1 UPDATE ... ORDER BY ... LIMIT n</li> 
+      <li>11.6.2 JOIN UPDATE</li> 
+      <li>11.6.3 여러 레코드 UPDATE</li> 
+      <li>11.6.4 JOIN DELETE</li> 
+     </ul></li> 
+    <li>11.7 스키마 조작(DDL) 
+     <ul> 
+      <li>11.7.1 온라인 DDL</li> 
+      <li>11.7.2 데이터베이스 변경</li> 
+      <li>11.7.3 테이블 스페이스 변경</li> 
+      <li>11.7.4 테이블 변경</li> 
+      <li>11.7.5 칼럼 변경</li> 
+      <li>11.7.6 인덱스 변경</li> 
+      <li>11.7.7 테이블 변경 묶음 실행</li> 
+      <li>11.7.8 프로세스 조회 및 강제 종료</li> 
+      <li>11.7.9 활성 트랜잭션 조회</li> 
+     </ul></li> 
+    <li>11.8 쿼리 성능 테스트 
+     <ul> 
+      <li>11.8.1 쿼리의 성능에 영향을 미치는 요소</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 12장: 확장 검색</strong> 
+   <ul> 
+    <li>12.1 전문 검색 
+     <ul> 
+      <li>12.1.1 전문 검색 인덱스의 생성과 검색</li> 
+      <li>12.1.2 전문 검색 쿼리 모드</li> 
+      <li>12.1.3 전문 검색 인덱스 디버깅</li> 
+     </ul></li> 
+    <li>12.2 공간 검색 
+     <ul> 
+      <li>12.2.1 용어 설명</li> 
+      <li>12.2.2 SRS(Spatial Reference System)</li> 
+      <li>12.2.3 투영 좌표계와 평면 좌표계</li> 
+      <li>12.2.4 지리 좌표계</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 13장: 파티션</strong> 
+   <ul> 
+    <li>13.1 개요 
+     <ul> 
+      <li>13.1.1 파티션을 사용하는 이유</li> 
+      <li>13.1.2 MySQL 파티션의 내부 처리</li> 
+     </ul></li> 
+    <li>13.2 주의사항 
+     <ul> 
+      <li>13.2.1 파티션의 제약 사항</li> 
+      <li>13.2.2 파티션 사용 시 주의사항</li> 
+     </ul></li> 
+    <li>13.3 MySQL 파티션의 종류 
+     <ul> 
+      <li>13.3.1 레인지 파티션</li> 
+      <li>13.3.2 리스트 파티션</li> 
+      <li>13.3.3 해시 파티션</li> 
+      <li>13.3.4 키 파티션</li> 
+      <li>13.3.5 리니어 해시 파티션/리니어 키 파티션</li> 
+      <li>13.3.6 파티션 테이블의 쿼리 성능</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 14장: 스토어드 프로그램</strong> 
+   <ul> 
+    <li>14.1 스토어드 프로그램의 장단점 
+     <ul> 
+      <li>14.1.1 스토어드 프로그램의 장점</li> 
+      <li>14.1.2 스토어드 프로그램의 단점</li> 
+     </ul></li> 
+    <li>14.2 스토어드 프로그램의 문법 
+     <ul> 
+      <li>14.2.1 예제 테스트 시 주의사항</li> 
+      <li>14.2.2 스토어드 프로시저</li> 
+      <li>14.2.3 스토어드 함수</li> 
+      <li>14.2.4 트리거</li> 
+      <li>14.2.5 이벤트</li> 
+      <li>14.2.6 스토어드 프로그램 본문(Body) 작성</li> 
+     </ul></li> 
+    <li>14.3 스토어드 프로그램의 보안 옵션 
+     <ul> 
+      <li>14.3.1 DEFINER와 SQL SECURITY 옵션</li> 
+      <li>14.3.2 DETERMINISTIC과 NOT DETERMINISTIC 옵션</li> 
+     </ul></li> 
+    <li>14.4 스토어드 프로그램의 참고 및 주의사항 
+     <ul> 
+      <li>14.4.1 한글 처리</li> 
+      <li>14.4.2 스토어드 프로그램과 세션 변수</li> 
+      <li>14.4.3 스토어드 프로시저와 재귀 호출</li> 
+      <li>14.4.4 중첩된 커서 사용</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 15장: 데이터 타입</strong> 
+   <ul> 
+    <li>15.1 문자열(CHAR와 VARCHAR) 
+     <ul> 
+      <li>15.1.1 저장 공간</li> 
+      <li>15.1.2 저장 공간과 스키마 변경(Online DDL)</li> 
+      <li>15.1.3 문자 집합(캐릭터 셋)</li> 
+      <li>15.1.4 콜레이션(Collation)</li> 
+      <li>15.1.5 비교 방식</li> 
+      <li>15.1.6 문자열 이스케이프 처리</li> 
+     </ul></li> 
+    <li>15.2 숫자 
+     <ul> 
+      <li>15.2.1 정수</li> 
+      <li>15.2.2 부동 소수점</li> 
+      <li>15.2.3 DECIMAL</li> 
+      <li>15.2.4 정수 타입의 칼럼을 생성할 때의 주의사항</li> 
+      <li>15.2.5 자동 증가(AUTO_INCREMENT) 옵션 사용</li> 
+     </ul></li> 
+    <li>15.3 날짜와 시간 
+     <ul> 
+      <li>15.3.1 자동 업데이트</li> 
+     </ul></li> 
+    <li>15.4 ENUM과 SET 
+     <ul> 
+      <li>15.4.1 ENUM</li> 
+      <li>15.4.2 SET</li> 
+     </ul></li> 
+    <li>15.5 TEXT와 BLOB</li> 
+    <li>15.6 공간 데이터 타입 
+     <ul> 
+      <li>15.6.1 공간 데이터 생성</li> 
+      <li>15.6.2 공간 데이터 조회</li> 
+     </ul></li> 
+    <li>15.7 JSON 타입 
+     <ul> 
+      <li>15.7.1 저장 방식</li> 
+      <li>15.7.2 부분 업데이트 성능</li> 
+      <li>15.7.3 JSON 타입 콜레이션과 비교</li> 
+      <li>15.7.4 JSON 칼럼 선택</li> 
+      <li>15.8 가상 칼럼(파생 칼럼)</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 16장: 복제</strong> 
+   <ul> 
+    <li>16.1 개요</li> 
+    <li>16.2 복제 아키텍처</li> 
+    <li>16.3 복제 타입 
+     <ul> 
+      <li>16.3.1 바이너리 로그 파일 위치 기반 복제</li> 
+      <li>16.3.2 글로벌 트랜잭션 아이디(GTID) 기반 복제</li> 
+     </ul></li> 
+    <li>16.4 복제 데이터 포맷 
+     <ul> 
+      <li>16.4.1 Statement 기반 바이너리 로그 포맷</li> 
+      <li>16.4.2 Row 기반 바이너리 로그 포맷</li> 
+      <li>16.4.3 Mixed 포맷</li> 
+      <li>16.4.4 Row 포맷의 용량 최적화</li> 
+     </ul></li> 
+    <li>16.5 복제 동기화 방식 
+     <ul> 
+      <li>16.5.1 비동기 복제(Asynchronous replication)</li> 
+      <li>16.5.2 반동기 복제(Semi-synchronous replication)</li> 
+     </ul></li> 
+    <li>16.6 복제 토폴로지 
+     <ul> 
+      <li>16.6.1 싱글 레플리카 복제 구성</li> 
+      <li>16.6.2 멀티 레플리카 복제 구성</li> 
+      <li>16.6.3 체인 복제 구성</li> 
+      <li>16.6.4 듀얼 소스 복제 구성</li> 
+      <li>16.6.5 멀티 소스 복제 구성</li> 
+     </ul></li> 
+    <li>16.7 복제 고급 설정 
+     <ul> 
+      <li>16.7.1 지연된 복제(Delayed Replication)</li> 
+      <li>16.7.2 멀티 스레드 복제(Multi-threaded Replication)</li> 
+      <li>16.7.3 크래시 세이프 복제(Crash-safe Replication)</li> 
+      <li>16.7.4 필터링된 복제(Filtered Replication)</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 17장: InnoDB 클러스터</strong> 
+   <ul> 
+    <li>17.1 InnoDB 클러스터 아키텍처</li> 
+    <li>17.2 그룹 복제(Group Replication) 
+     <ul> 
+      <li>17.2.1 그룹 복제 아키텍처</li> 
+      <li>17.2.2 그룹 복제 모드</li> 
+      <li>17.2.3 그룹 멤버 관리(Group Membership)</li> 
+      <li>17.2.4 그룹 복제에서의 트랜잭션 처리</li> 
+      <li>17.2.5 그룹 복제의 자동 장애 감지 및 대응</li> 
+      <li>17.2.6 그룹 복제의 분산 복구</li> 
+      <li>17.2.7 그룹 복제 요구사항</li> 
+      <li>17.2.8 그룹 복제 제약 사항</li> 
+     </ul></li> 
+    <li>17.3 MySQL 셸</li> 
+    <li>17.4 MySQL 라우터</li> 
+    <li>17.5 InnoDB 클러스터 구축 
+     <ul> 
+      <li>17.5.1 InnoDB 클러스터 요구사항</li> 
+      <li>17.5.2 InnoDB 클러스터 생성</li> 
+     </ul></li> 
+    <li>17.6 InnoDB 클러스터 모니터링</li> 
+    <li>17.7 InnoDB 클러스터 작업 
+     <ul> 
+      <li>17.7.1 클러스터 모드 변경</li> 
+      <li>17.7.2 프라이머리 변경</li> 
+      <li>17.7.3 인스턴스 제거</li> 
+      <li>17.7.4 클러스터 해체</li> 
+      <li>17.7.5 클러스터 및 인스턴스 설정 변경</li> 
+     </ul></li> 
+    <li>17.8 InnoDB 클러스터 트러블슈팅 
+     <ul> 
+      <li>17.8.1 클러스터 인스턴스 장애</li> 
+      <li>17.8.2 클러스터의 정족수 손실</li> 
+     </ul></li> 
+    <li>17.9 InnoDB 클러스터 버전 업그레이드</li> 
+    <li>17.10 InnoDB 클러스터 제약 사항</li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 18장: Performance 스키마 &amp; Sys 스키마</strong> 
+   <ul> 
+    <li>18.1 Performance 스키마란?</li> 
+    <li>18.2 Performance 스키마 구성 
+     <ul> 
+      <li>18.2.1 Setup 테이블</li> 
+      <li>18.2.2 Instance 테이블</li> 
+      <li>18.2.3 Connection 테이블</li> 
+      <li>18.2.4 Variable 테이블</li> 
+      <li>18.2.5 Event 테이블</li> 
+      <li>18.2.6 Summary 테이블</li> 
+      <li>18.2.7 Lock 테이블</li> 
+      <li>18.2.8 Replication 테이블</li> 
+      <li>18.2.9 Clone 테이블</li> 
+      <li>18.2.10 기타 테이블</li> 
+     </ul></li> 
+    <li>18.3 Performance 스키마 설정 
+     <ul> 
+      <li>18.3.1 메모리 사용량 설정</li> 
+      <li>18.3.2 데이터 수집 및 저장 설정</li> 
+     </ul></li> 
+    <li>18.4 Sys 스키마란?</li> 
+    <li>18.5 Sys 스키마 사용을 위한 사전 설정</li> 
+    <li>18.6 Sys 스키마 구성</li> 
+    <li>18.7 Performance 스키마 및 Sys 스키마 활용 예제 
+     <ul> 
+      <li>18.7.1 호스트 접속 이력 확인</li> 
+      <li>18.7.2 미사용 DB 계정 확인</li> 
+      <li>18.7.3 MySQL 총 메모리 사용량 확인</li> 
+      <li>18.7.4 스레드별 메모리 사용량 확인</li> 
+      <li>18.7.5 미사용 인덱스 확인</li> 
+      <li>18.7.6 중복된 인덱스 확인</li> 
+      <li>18.7.7 변경이 없는 테이블 목록 확인</li> 
+      <li>18.7.8 I/O 요청이 많은 테이블 목록 확인</li> 
+      <li>18.7.9 테이블별 작업량 통계 확인</li> 
+      <li>18.7.10 테이블의 Auto-Increment 칼럼 사용량 확인</li> 
+      <li>18.7.11 풀 테이블 스캔 쿼리 확인</li> 
+      <li>18.7.12 자주 실행되는 쿼리 목록 확인</li> 
+      <li>18.7.13 실행 시간이 긴 쿼리 목록 확인</li> 
+      <li>18.7.14 정렬 작업을 수행한 쿼리 목록 확인</li> 
+      <li>18.7.15 임시 테이블을 생성하는 쿼리 목록 확인</li> 
+      <li>18.7.16 트랜잭션이 활성 상태인 커넥션에서 실행한 쿼리 내역 확인</li> 
+      <li>18.7.17 쿼리 프로파일링</li> 
+      <li>18.7.18 ALTER 작업 진행률 확인</li> 
+      <li>18.7.19 메타데이터 락 대기 확인</li> 
+      <li>18.7.20 데이터 락 대기 확인</li> 
+     </ul></li> 
+   </ul></li> 
+ </ul> 
+</div> 
+<div class="tab-pane" id="sourcecode">
+ <ul> 
+  <li>GitHub 저장소: <a href="https://github.com/wikibook/realmysql80">https://github.com/wikibook/realmysql80</a></li> 
+  <li>ZIP 형식으로 다운로드: <a href="https://github.com/wikibook/realmysql80/archive/refs/heads/main.zip">https://github.com/wikibook/realmysql80/archive/refs/heads/main.zip</a></li> 
+ </ul> 
+</div> 
+<div class="tab-pane" id="errata"> 
+</div> 
+<div class="tab-pane" id="reference"> 
+</div>

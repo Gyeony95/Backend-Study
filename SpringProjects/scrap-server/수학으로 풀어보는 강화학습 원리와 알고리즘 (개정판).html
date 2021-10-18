@@ -1,0 +1,272 @@
+<div class="tab-pane active" id="intro_book">
+ <p><strong>코딩하면서 알고리즘이 유도된 과정이 궁금하다면 이 책을 선택하기 바랍니다!</strong></p> 
+ <p>이 책은 딥러닝이나 강화학습 예제를 코딩하면서 그 배경 알고리즘의 유도 과정을 궁금해하는 사람을 위한 책이다. 술술 읽히는 책은 아니지만, 그렇다고 심하게 어려운 책도 아니다. 수학의 선수 지식으로 대학 2학년 때 배우는 공업수학을 이수한 정도면 충분하고, 딥러닝의 선수 지식으로는 텐서플로 또는 파이토치를 사용하여 MNIST와 같은 간단한 딥러닝 예제를 따라해 본 정도면 충분하다.</p> 
+ <p>이 책은 강화학습뿐만 아니라 다른 머신러닝과 딥러닝의 기초가 되는 확률이론과 추정론에 대한 기본적인 이해를 바탕으로 강화학습의 여러 알고리즘을 처음부터 끝까지 생략하지 않고 수식으로 유도했다.</p> 
+ <p>강화학습이 추구하는 기본 목표로부터 A2C, A3C, PPO, DDPG, SAC 및 모델 기반 강화학습 등 강화학습의 알고리즘이 무엇이고 어떤 목적으로 개발됐는지, 어떻게 수학적으로 유도했는지, 그리고 어떻게 코드로 구현해 적용했는지를 구체적으로 설명한다.</p> 
+ <p><strong>★ 이 책에서 다루는 내용 ★</strong></p> 
+ <ul> 
+  <li>강화학습을 이해하기 위한 기본 수학: 확률론, 추정론, 최적화, 벡터/행렬의 미분</li> 
+  <li>강화학습 알고리즘: A2C, A3C, PPO, DDPG, SAC</li> 
+  <li>최적제어 알고리즘: 반복적 LQR, 가우시안 LQR</li> 
+  <li>로컬 모델 기반 강화학습: GMM, 모델 피팅 방법, LQR을 이용한 강화학습</li> 
+ </ul> 
+ <p>&nbsp;</p> 
+ <h4>도서 상세 이미지</h4> 
+ <p><img src="//wikibook.co.kr/images/images/mathrlrev_Detail.png" class="book-preview-img"></p> 
+</div> 
+<div class="tab-pane" id="review_by_publisher"> 
+</div> 
+<div class="tab-pane" id="intro_author">
+ <h4>박성수</h4> 
+ <p>서울대학교 항공우주공학과에서 학사, 동 대학교 대학원에서 석사, 그리고 국비유학으로 미국 UC Berkeley에서 박사학위를 받았다. 유학가기 전에 국방과학연구소에서 연구원으로 일했으며, 박사후에는 UC Berkeley ITS 연구소에서 포스트닥 연구원으로 일했다. 현재 세종대학교 항공우주공학과 교수이며, 유도항법제어 및 AI for Dynamics and Control 분야를 연구하고 있다.</p> 
+ <ul> 
+  <li>개인 블로그: <a href="https://pasus.tistory.com/">https://pasus.tistory.com/</a></li> 
+ </ul> 
+</div> 
+<div class="tab-pane" id="toc">
+ <ul> 
+  <li><strong>▣ 01장: 강화학습 수학</strong> 
+   <ul> 
+    <li>1.1 확률과 랜덤 변수 
+     <ul> 
+      <li>1.1.1 확률</li> 
+      <li>1.1.2 랜덤 변수</li> 
+      <li>1.1.3 누적분포함수와 확률밀도함수</li> 
+      <li>1.1.4 결합 확률함수</li> 
+      <li>1.1.5 조건부 확률함수</li> 
+      <li>1.1.6 독립 랜덤 변수</li> 
+      <li>1.1.7 랜덤 변수의 함수</li> 
+      <li>1.1.8 베이즈 정리</li> 
+      <li>1.1.9 샘플링</li> 
+     </ul></li> 
+    <li>1.2 기댓값과 분산 
+     <ul> 
+      <li>1.2.1 기댓값</li> 
+      <li>1.2.2 분산</li> 
+      <li>1.2.3 조건부 기댓값과 분산</li> 
+     </ul></li> 
+    <li>1.3 랜덤벡터 
+     <ul> 
+      <li>1.3.1 정의</li> 
+      <li>1.3.2 기댓값과 공분산 행렬</li> 
+      <li>1.3.3 샘플 평균</li> 
+     </ul></li> 
+    <li>1.4 가우시안 분포</li> 
+    <li>1.5 랜덤 시퀀스 
+     <ul> 
+      <li>1.5.1 정의</li> 
+      <li>1.5.2 평균함수와 자기 상관함수</li> 
+      <li>1.5.3 마르코프 시퀀스</li> 
+     </ul></li> 
+    <li>1.6 선형 확률 차분방정식</li> 
+    <li>1.7 표기법</li> 
+    <li>1.8 중요 샘플링</li> 
+    <li>1.9 엔트로피</li> 
+    <li>1.10 KL 발산</li> 
+    <li>1.11 추정기 
+     <ul> 
+      <li>1.11.1 최대사후 추정기</li> 
+      <li>1.11.2 최대빈도 추정기</li> 
+     </ul></li> 
+    <li>1.12 벡터와 행렬의 미분 
+     <ul> 
+      <li>1.12.1 벡터로 미분</li> 
+      <li>1.12.2 행렬로 미분</li> 
+     </ul></li> 
+    <li>1.13 촐레스키 분해</li> 
+    <li>1.14 경사하강법 
+     <ul> 
+      <li>1.14.1 배치 경사하강법</li> 
+      <li>1.14.2 확률적 경사하강법</li> 
+     </ul></li> 
+    <li>1.15 경사하강법의 개선 
+     <ul> 
+      <li>1.15.1 모멘텀</li> 
+      <li>1.15.2 RMSprop</li> 
+      <li>1.15.3 아담</li> 
+     </ul></li> 
+    <li>1.16 손실함수의 확률론적 해석 
+     <ul> 
+      <li>1.16.1 가우시안 오차 분포</li> 
+      <li>1.16.2 베르누이 오차 분포</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 02장: 강화학습 개념</strong> 
+   <ul> 
+    <li>2.1 강화학습 개요</li> 
+    <li>2.2 강화학습 프로세스와 표기법</li> 
+    <li>2.3 마르코프 결정 프로세스 
+     <ul> 
+      <li>2.3.1 정의</li> 
+      <li>2.3.2 가치함수</li> 
+      <li>2.3.3 벨만 방정식</li> 
+      <li>2.3.4 벨만 최적 방정식</li> 
+     </ul></li> 
+    <li>2.4 강화학습 방법</li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 03장: 정책 그래디언트</strong> 
+   <ul> 
+    <li>3.1 배경</li> 
+    <li>3.2 목적함수</li> 
+    <li>3.3 정책 그래디언트</li> 
+    <li>3.4 REINFORCE 알고리즘</li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 04장: A2C</strong> 
+   <ul> 
+    <li>4.1 배경</li> 
+    <li>4.2 그래디언트의 재구성</li> 
+    <li>4.3 분산을 감소시키기 위한 방법</li> 
+    <li>4.4 A2C 알고리즘</li> 
+    <li>4.5 A2C 알고리즘 구현 
+     <ul> 
+      <li>4.5.1 테스트 환경</li> 
+      <li>4.5.2 코드 개요</li> 
+      <li>4.5.3 액터 클래스</li> 
+      <li>4.5.4 크리틱 클래스</li> 
+      <li>4.5.5 에이전트 클래스</li> 
+      <li>4.5.6 학습 결과</li> 
+      <li>4.5.7 전체 코드</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 05장: A3C</strong> 
+   <ul> 
+    <li>5.1 배경</li> 
+    <li>5.2 그래디언트 계산의 문제 
+     <ul> 
+      <li>5.2.1 샘플의 상관관계</li> 
+      <li>5.2.2 n-스텝 가치 추정</li> 
+     </ul></li> 
+    <li>5.3 비동기 액터-크리틱(A3C) 알고리즘</li> 
+    <li>5.4 그래디언트 병렬화 방식의 A3C 알고리즘 구현 
+     <ul> 
+      <li>5.4.1 테스트 환경</li> 
+      <li>5.4.2 코드 개요</li> 
+      <li>5.4.3 액터 클래스</li> 
+      <li>5.4.4 크리틱 클래스</li> 
+      <li>5.4.5 에이전트 클래스</li> 
+      <li>5.4.6 학습 결과</li> 
+      <li>5.4.7 전체 코드</li> 
+     </ul></li> 
+    <li>5.5 데이터 병렬화 방식의 A3C 알고리즘 구현 
+     <ul> 
+      <li>5.5.1 코드 개요</li> 
+      <li>5.5.2 전체 코드 </li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 06장: PPO</strong> 
+   <ul> 
+    <li>6.1 배경</li> 
+    <li>6.2 그래디언트의 재구성</li> 
+    <li>6.3 정책 업데이트와 성능</li> 
+    <li>6.4 PPO 알고리즘</li> 
+    <li>6.5 어드밴티지 추정의 일반화 (GAE)</li> 
+    <li>6.6 PPO 알고리즘 구현 
+     <ul> 
+      <li>6.6.1 테스트 환경</li> 
+      <li>6.6.2 코드 개요</li> 
+      <li>6.6.3 액터 클래스</li> 
+      <li>6.6.4 크리틱 클래스</li> 
+      <li>6.6.5 에이전트 클래스</li> 
+      <li>6.6.6 학습 결과</li> 
+      <li>6.6.7 전체 코드</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 07장: DDPG</strong> 
+   <ul> 
+    <li>7.1 배경 240</li> 
+    <li>7.2 그래디언트의 재구성</li> 
+    <li>7.3 DDPG 알고리즘</li> 
+    <li>7.4 DDPG 알고리즘 구현 
+     <ul> 
+      <li>7.4.1 테스트 환경</li> 
+      <li>7.4.2 코드 개요</li> 
+      <li>7.4.3 액터 클래스</li> 
+      <li>7.4.4 크리틱 클래스</li> 
+      <li>7.4.5 액터-크리틱 에이전트 클래스</li> 
+      <li>7.4.6 학습 결과</li> 
+      <li>7.4.7 전체 코드</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 08장: SAC</strong> 
+   <ul> 
+    <li>8.1 배경</li> 
+    <li>8.2 소프트 벨만 방정식</li> 
+    <li>8.3 소프트 정책 개선</li> 
+    <li>8.4 SAC 알고리즘</li> 
+    <li>8.5 SAC 알고리즘 구현 
+     <ul> 
+      <li>8.5.1 테스트 환경</li> 
+      <li>8.5.2 코드 개요</li> 
+      <li>8.5.3 액터 클래스</li> 
+      <li>8.5.4 크리틱 클래스</li> 
+      <li>8.5.5 에이전트 클래스</li> 
+      <li>8.5.6 학습 결과</li> 
+      <li>8.5.7 전체 코드</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 09장: 모델 기반 강화학습 기초</strong> 
+   <ul> 
+    <li>9.1 배경</li> 
+    <li>9.2 최적제어 
+     <ul> 
+      <li>9.2.1 LQR</li> 
+      <li>9.2.2 확률적 LQR</li> 
+      <li>9.2.3 가우시안 LQR</li> 
+      <li>9.2.4 반복적 LQR</li> 
+     </ul></li> 
+    <li>9.3 모델 학습 방법</li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 10장: 로컬 모델 기반 강화학습</strong> 
+   <ul> 
+    <li>10.1 배경</li> 
+    <li>10.2 로컬 모델 피팅 기반 LQR</li> 
+    <li>10.3 로컬 모델 피팅 
+     <ul> 
+      <li>10.3.1 조건부 가우시안 방법</li> 
+      <li>10.3.2 GMM 사전분포를 이용한 로컬 모델 업데이트</li> 
+     </ul></li> 
+    <li>10.4 로컬 제어 법칙 업데이트 
+     <ul> 
+      <li>10.4.1 대체 비용함수 계산</li> 
+      <li>10.4.2 KL 발산 계산</li> 
+      <li>10.4.3 h 조정</li> 
+      <li>10.4.4 e 조정</li> 
+     </ul></li> 
+    <li>10.5 가우시안 LQR을 이용한 강화학습 알고리즘</li> 
+    <li>10.6 가우시안 LQR을 이용한 강화학습 알고리즘 구현 
+     <ul> 
+      <li>10.6.1 테스트 환경</li> 
+      <li>10.6.2 코드 개요</li> 
+      <li>10.6.3 궤적 생성</li> 
+      <li>10.6.4 로컬 모델 피팅</li> 
+      <li>10.6.5 가우시안 LQR</li> 
+      <li>10.6.6 가우시안 혼합 모델</li> 
+      <li>10.6.7 LQR-FLM 에이전트 클래스</li> 
+      <li>10.6.8 학습 결과</li> 
+      <li>10.6.9 전체 코드</li> 
+     </ul></li> 
+    <li>10.7 GPS로의 발전</li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 참고문헌</strong></li> 
+ </ul> 
+</div> 
+<div class="tab-pane" id="sourcecode">
+ <ul> 
+  <li>GitHub 저장소: <a href="https://github.com/pasus/Reinforcement-Learning-Book-Revision">https://github.com/pasus/Reinforcement-Learning-Book-Revision</a></li> 
+  <li>ZIP 형식으로 다운로드: <a href="https://github.com/pasus/Reinforcement-Learning-Book-Revision/archive/master.zip">https://github.com/pasus/Reinforcement-Learning-Book-Revision/archive/master.zip</a></li> 
+ </ul> 
+</div> 
+<div class="tab-pane" id="errata"> 
+</div> 
+<div class="tab-pane" id="reference"> 
+</div>

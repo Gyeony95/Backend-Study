@@ -1,0 +1,321 @@
+<div class="tab-pane active" id="intro_book">
+ <p><strong>MySQL 서버를 활용하는 프로젝트에 꼭 필요한 경험과 지식을 담았습니다!</strong></p> 
+ <p>《Real MySQL 8.0》은 《Real MySQL》을 정제해서 꼭 필요한 내용으로 압축하고, MySQL 8.0의 GTID와 InnoDB 클러스터 기능들과 소프트웨어 업계 트렌드를 반영한 GIS 및 전문 검색 등의 확장 기능들을 추가로 수록했다.</p> 
+ <p>또한 《Real MySQL 8.0》은 단순 SQL 문법이나 쿼리 작성보다는 MySQL 서버를 활용하는 프로젝트에서 꼭 필요한 경험과 지식을 전달하는 데 집중했다.</p> 
+ <p>이 책을 처음부터 끝까지 정독할 수 있다면 더없이 좋겠지만 필요하거나 관심 있는 내용 위주로 살펴봐도 지금까지 경험했던 수많은 문제들을 해결할 수 있을 것이다.</p> 
+ <p><strong>★ 이 책에서 다루는 내용 ★</strong></p> 
+ <ul> 
+  <li>MySQL 설치와 서버 아키텍처</li> 
+  <li>트랜잭션과 잠금</li> 
+  <li>인덱스 종류의 구조 및 활용</li> 
+  <li>GTID 기반 복제 및 InnoDB 클러스터 아키텍처</li> 
+  <li>쿼리의 실행 계획 분석 및 최적화</li> 
+  <li>스토어드 프로그램 개발</li> 
+  <li>데이터 모델링 및 최적의 데이터 타입 선정</li> 
+  <li>파티션 및 데이터 압축 활용</li> 
+  <li>GIS 및 전문 검색 기능 활용</li> 
+  <li>Performance 스키마 및 Sys 스키마 활용</li> 
+ </ul> 
+ <p>&nbsp;</p> 
+ <h4>도서 상세 이미지</h4> 
+ <p><img src="//wikibook.co.kr/images/images/realmysql8012_Detail.png" class="book-preview-img"></p> 
+</div> 
+<div class="tab-pane" id="review_by_publisher"> 
+</div> 
+<div class="tab-pane" id="intro_author">
+ <h4>백은빈</h4> 
+ <p>컴퓨터 공학을 전공하고 카카오에서 MySQL/MongoDB DBA로 근무하면서 DB 운영 및 트러블슈팅과 데이터 모델링, DBMS 도구 개발 및 신기술 벤치마킹을 수행했으며, 현재 당근마켓에서 MySQL/MongoDB DBA로 근무하고 있다.</p> 
+ <h4>이성욱</h4> 
+ <p>컴퓨터 과학을 전공하고 네이버와 라인을 거쳐 카카오 및 밸런스히어로에서 DBA로 근무했으며, 현재 당근마켓 DB팀 리더로 근무하고 있다.</p> 
+</div> 
+<div class="tab-pane" id="toc">
+ <ul> 
+  <li><strong>▣ 01장: 소개</strong> 
+   <ul> 
+    <li>1.1 MySQL 소개</li> 
+    <li>1.2 왜 MySQL인가?</li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 02장: 설치와 설정</strong> 
+   <ul> 
+    <li>2.1 MySQL 서버 설치 
+     <ul> 
+      <li>2.1.1 버전과 에디션(엔터프라이즈와 커뮤니티) 선택</li> 
+      <li>2.1.2 MySQL 설치</li> 
+     </ul></li> 
+    <li>2.2 MySQL 서버의 시작과 종료 
+     <ul> 
+      <li>2.2.1 설정 파일 및 데이터 파일 준비</li> 
+      <li>2.2.2 시작과 종료</li> 
+      <li>2.2.3 서버 연결 테스트</li> 
+     </ul></li> 
+    <li>2.3 MySQL 서버 업그레이드 
+     <ul> 
+      <li>2.3.1 인플레이스 업그레이드 제약 사항</li> 
+      <li>2.3.2 MySQL 8.0 업그레이드 시 고려 사항</li> 
+      <li>2.3.3 MySQL 8.0 업그레이드</li> 
+     </ul></li> 
+    <li>2.4 서버 설정 
+     <ul> 
+      <li>2.4.1 설정 파일의 구성</li> 
+      <li>2.4.2 MySQL 시스템 변수의 특징</li> 
+      <li>2.4.3 글로벌 변수와 세션 변수</li> 
+      <li>2.4.4 정적 변수와 동적 변수</li> 
+      <li>2.4.5 SET PERSIST</li> 
+      <li>2.4.6 my.cnf 파일</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 03장: 사용자 및 권한</strong> 
+   <ul> 
+    <li>3.1 사용자 식별</li> 
+    <li>3.2 사용자 계정 관리 
+     <ul> 
+      <li>3.2.1 시스템 계정과 일반 계정</li> 
+      <li>3.2.2 계정 생성</li> 
+     </ul></li> 
+    <li>3.3 비밀번호 관리 
+     <ul> 
+      <li>3.3.1 고수준 비밀번호</li> 
+      <li>3.3.2 이중 비밀번호</li> 
+     </ul></li> 
+    <li>3.4 권한(Privilege)</li> 
+    <li>3.5 역할(Role)</li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 04장: 아키텍처</strong> 
+   <ul> 
+    <li>4.1 MySQL 엔진 아키텍처 
+     <ul> 
+      <li>4.1.1 MySQL의 전체 구조</li> 
+      <li>4.1.2 MySQL 스레딩 구조</li> 
+      <li>4.1.3 메모리 할당 및 사용 구조</li> 
+      <li>4.1.4 플러그인 스토리지 엔진 모델</li> 
+      <li>4.1.5 컴포넌트</li> 
+      <li>4.1.6 쿼리 실행 구조</li> 
+      <li>4.1.7 복제</li> 
+      <li>4.1.8 쿼리 캐시</li> 
+      <li>4.1.9 스레드 풀</li> 
+      <li>4.1.10 트랜잭션 지원 메타데이터</li> 
+     </ul></li> 
+    <li>4.2 InnoDB 스토리지 엔진 아키텍처 
+     <ul> 
+      <li>4.2.1 프라이머리 키에 의한 클러스터링</li> 
+      <li>4.2.2 외래 키 지원</li> 
+      <li>4.2.3 MVCC(Multi Version Concurrency Control)</li> 
+      <li>4.2.4 잠금 없는 일관된 읽기(Non-Locking Consistent Read)</li> 
+      <li>4.2.5 자동 데드락 감지</li> 
+      <li>4.2.6 자동화된 장애 복구</li> 
+      <li>4.2.7 InnoDB 버퍼 풀</li> 
+      <li>4.2.8 Double Write Buffer</li> 
+      <li>4.2.9 언두 로그</li> 
+      <li>4.2.10 체인지 버퍼</li> 
+      <li>4.2.11 리두 로그 및 로그 버퍼</li> 
+      <li>4.2.12 어댑티브 해시 인덱스</li> 
+      <li>4.2.13 InnoDB와 MyISAM, MEMORY 스토리지 엔진 비교</li> 
+     </ul></li> 
+    <li>4.3 MyISAM 스토리지 엔진 아키텍처 
+     <ul> 
+      <li>4.3.1 키 캐시</li> 
+      <li>4.3.2 운영체제의 캐시 및 버퍼</li> 
+      <li>4.3.3 데이터 파일과 프라이머리 키(인덱스) 구조</li> 
+     </ul></li> 
+    <li>4.4 MySQL 로그 파일 
+     <ul> 
+      <li>4.4.1 에러 로그 파일</li> 
+      <li>4.4.2 제너럴 쿼리 로그 파일(제너럴 로그 파일, General log)</li> 
+      <li>4.4.3 슬로우 쿼리 로그</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 05장: 트랜잭션과 잠금</strong> 
+   <ul> 
+    <li>5.1 트랜잭션 
+     <ul> 
+      <li>5.1.1 MySQL에서의 트랜잭션</li> 
+      <li>5.1.2 주의사항</li> 
+     </ul></li> 
+    <li>5.2 MySQL 엔진의 잠금 
+     <ul> 
+      <li>5.2.1 글로벌 락</li> 
+      <li>5.2.2 테이블 락</li> 
+      <li>5.2.3 네임드 락</li> 
+      <li>5.2.4 메타데이터 락</li> 
+     </ul></li> 
+    <li>5.3 InnoDB 스토리지 엔진 잠금 
+     <ul> 
+      <li>5.3.1 InnoDB 스토리지 엔진의 잠금</li> 
+      <li>5.3.2 인덱스와 잠금</li> 
+      <li>5.3.3 레코드 수준의 잠금 확인 및 해제</li> 
+     </ul></li> 
+    <li>5.4 MySQL의 격리 수준 
+     <ul> 
+      <li>5.4.1 READ UNCOMMITTED</li> 
+      <li>5.4.2 READ COMMITTED</li> 
+      <li>5.4.3 REPEATABLE READ</li> 
+      <li>5.4.4 SERIALIZABLE</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 06장: 데이터 압축</strong> 
+   <ul> 
+    <li>6.1 페이지 압축</li> 
+    <li>6.2 테이블 압축 
+     <ul> 
+      <li>6.2.1 압축 테이블 생성</li> 
+      <li>6.2.2 KEY_BLOCK_SIZE 결정</li> 
+      <li>6.2.3 압축된 페이지의 버퍼 풀 적재 및 사용</li> 
+      <li>6.2.4 테이블 압축 관련 설정</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 07장: 데이터 암호화</strong> 
+   <ul> 
+    <li>7.1 MySQL 서버의 데이터 암호화 
+     <ul> 
+      <li>7.1.1 2단계 키 관리</li> 
+      <li>7.1.2 암호화와 성능</li> 
+      <li>7.1.3 암호화와 복제</li> 
+     </ul></li> 
+    <li>7.2 keyring_file 플러그인 설치</li> 
+    <li>7.3 테이블 암호화 
+     <ul> 
+      <li>7.3.1 테이블 생성</li> 
+      <li>7.3.2 응용 프로그램 암호화와의 비교</li> 
+      <li>7.3.3 테이블스페이스 이동</li> 
+     </ul></li> 
+    <li>7.4 언두 로그 및 리두 로그 암호화</li> 
+    <li>7.5 바이너리 로그 암호화 
+     <ul> 
+      <li>7.5.1 바이너리 로그 암호화 키 관리</li> 
+      <li>7.5.2 바이너리 로그 암호화 키 변경</li> 
+      <li>7.5.3 mysqlbinlog 도구 활용</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 08장: 인덱스</strong> 
+   <ul> 
+    <li>8.1 디스크 읽기 방식 
+     <ul> 
+      <li>8.1.1 하드 디스크 드라이브(HDD)와 솔리드 스테이트 드라이브(SSD)</li> 
+      <li>8.1.2 랜덤 I/O와 순차 I/O</li> 
+     </ul></li> 
+    <li>8.2 인덱스란?</li> 
+    <li>8.3 B-Tree 인덱스 
+     <ul> 
+      <li>8.3.1 구조 및 특성</li> 
+      <li>8.3.2 B-Tree 인덱스 키 추가 및 삭제</li> 
+      <li>8.3.3 B-Tree 인덱스 사용에 영향을 미치는 요소</li> 
+      <li>8.3.4 B-Tree 인덱스를 통한 데이터 읽기</li> 
+      <li>8.3.5 다중 칼럼(Multi-column) 인덱스</li> 
+      <li>8.3.6 B-Tree 인덱스의 정렬 및 스캔 방향</li> 
+      <li>8.3.7 B-Tree 인덱스의 가용성과 효율성</li> 
+     </ul></li> 
+    <li>8.4 R-Tree 인덱스 
+     <ul> 
+      <li>8.4.1 구조 및 특성</li> 
+      <li>8.4.2 R-Tree 인덱스의 용도</li> 
+     </ul></li> 
+    <li>8.5 전문 검색 인덱스 
+     <ul> 
+      <li>8.5.1 인덱스 알고리즘</li> 
+      <li>8.5.2 전문 검색 인덱스의 가용성</li> 
+     </ul></li> 
+    <li>8.6 함수 기반 인덱스 
+     <ul> 
+      <li>8.6.1 가상 칼럼을 이용한 인덱스</li> 
+      <li>8.6.2 함수를 이용한 인덱스</li> 
+     </ul></li> 
+    <li>8.7 멀티 밸류 인덱스</li> 
+    <li>8.8 클러스터링 인덱스 
+     <ul> 
+      <li>8.8.1 클러스터링 인덱스</li> 
+      <li>8.8.2 세컨더리 인덱스에 미치는 영향</li> 
+      <li>8.8.3 클러스터링 인덱스의 장점과 단점</li> 
+      <li>8.8.4 클러스터링 테이블 사용 시 주의사항</li> 
+     </ul></li> 
+    <li>8.9 유니크 인덱스 
+     <ul> 
+      <li>8.9.1 유니크 인덱스와 일반 세컨더리 인덱스의 비교</li> 
+      <li>8.9.2 유니크 인덱스 사용 시 주의사항</li> 
+     </ul></li> 
+    <li>8.10 외래키 
+     <ul> 
+      <li>8.10.1 자식 테이블의 변경이 대기하는 경우</li> 
+      <li>8.10.2 부모 테이블의 변경 작업이 대기하는 경우</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 09장: 옵티마이저와 힌트</strong> 
+   <ul> 
+    <li>9.1 개요 
+     <ul> 
+      <li>9.1.1 쿼리 실행 절차</li> 
+      <li>9.1.2 옵티마이저의 종류</li> 
+     </ul></li> 
+    <li>9.2 기본 데이터 처리 
+     <ul> 
+      <li>9.2.1 풀 테이블 스캔과 풀 인덱스 스캔</li> 
+      <li>9.2.2 병렬 처리</li> 
+      <li>9.2.3 ORDER BY 처리(Using filesort)</li> 
+      <li>9.2.4 GROUP BY 처리</li> 
+      <li>9.2.5 DISTINCT 처리</li> 
+      <li>9.2.6 내부 임시 테이블 활용</li> 
+     </ul></li> 
+    <li>9.3 고급 최적화 
+     <ul> 
+      <li>9.3.1 옵티마이저 스위치 옵션</li> 
+      <li>9.3.2 조인 최적화 알고리즘</li> 
+     </ul></li> 
+    <li>9.4 쿼리 힌트 
+     <ul> 
+      <li>9.4.1 인덱스 힌트</li> 
+      <li>9.4.2 옵티마이저 힌트</li> 
+     </ul></li> 
+    <li>&nbsp;</li> 
+   </ul></li> 
+  <li><strong>▣ 10장: 실행 계획</strong> 
+   <ul> 
+    <li>10.1 통계 정보 
+     <ul> 
+      <li>10.1.1 테이블 및 인덱스 통계 정보</li> 
+      <li>10.1.2 히스토그램</li> 
+      <li>10.1.3 코스트 모델(Cost Model)</li> 
+     </ul></li> 
+    <li>10.2 실행 계획 확인 
+     <ul> 
+      <li>10.2.1 실행 계획 출력 포맷</li> 
+      <li>10.2.2 쿼리의 실행 시간 확인</li> 
+     </ul></li> 
+    <li>10.3 실행 계획 분석 
+     <ul> 
+      <li>10.3.1 id 칼럼</li> 
+      <li>10.3.2 select_type 칼럼</li> 
+      <li>10.3.3 table 칼럼</li> 
+      <li>10.3.4 partitions 칼럼</li> 
+      <li>10.3.5 type 칼럼</li> 
+      <li>10.3.6 possible_keys 칼럼</li> 
+      <li>10.3.7 key 칼럼</li> 
+      <li>10.3.8 key_len 칼럼</li> 
+      <li>10.3.9 ref 칼럼</li> 
+      <li>10.3.10 rows 칼럼</li> 
+      <li>10.3.11 filtered 칼럼</li> 
+      <li>10.3.12 Extra 칼럼</li> 
+     </ul></li> 
+   </ul></li> 
+ </ul> 
+</div> 
+<div class="tab-pane" id="sourcecode">
+ <ul> 
+  <li>GitHub 저장소: <a href="https://github.com/wikibook/realmysql80">https://github.com/wikibook/realmysql80</a></li> 
+  <li>ZIP 형식으로 다운로드: <a href="https://github.com/wikibook/realmysql80/archive/refs/heads/main.zip">https://github.com/wikibook/realmysql80/archive/refs/heads/main.zip</a></li> 
+ </ul> 
+</div> 
+<div class="tab-pane" id="errata">
+ <ul> 
+  <li><p>102쪽, 본문 밑에서 8번째 줄</p> <p>격리 수준이 READ_UNCOMMITTED인 경우에는 <code>InnoDB 버퍼 풀이나 데이터 파일로부터 변경되지 않은 데이터를</code> 읽어서 반환한다.</p> <p>==&gt;</p> <p>격리 수준이 READ_UNCOMMITTED인 경우에는 <code>InnoDB 버퍼 풀이 현재 가지고 있는 변경된 데이터를</code> 읽어서 반환한다.</p></li> 
+  <li><p>126쪽, 본문 밑에서 4번째 줄</p> <p>대략 <code>2097152(=16*1024 * 128 * 2 / 2)</code>개 정도의</p> <p>==&gt;</p> <p>대략 <code>131072(=16 * 1024 / 16 * 128 * 2 / 2)</code>개 정도의</p></li> 
+ </ul> 
+</div> 
+<div class="tab-pane" id="reference"> 
+</div>
